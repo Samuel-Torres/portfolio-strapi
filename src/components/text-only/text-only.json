@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_text_only_text_onlies",
+  "info": {
+    "displayName": "textOnly",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

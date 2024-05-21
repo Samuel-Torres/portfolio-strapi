@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_hero_image_hero_images",
+  "info": {
+    "displayName": "heroImage",
+    "icon": "cast",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageSource": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

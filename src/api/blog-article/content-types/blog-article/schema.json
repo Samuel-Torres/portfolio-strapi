@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_articles",
+  "info": {
+    "singularName": "blog-article",
+    "pluralName": "blog-articles",
+    "displayName": "Blog Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks",
+      "required": true
+    },
+    "publishDate": {
+      "type": "date",
+      "required": true,
+      "default": "2024-05-21",
+      "unique": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "blog_articles"
+    },
+    "Section": {
+      "type": "dynamiczone",
+      "components": [
+        "hero-image.hero-image",
+        "text-media-aside.text-media-aside",
+        "text-only.text-only"
+      ]
+    }
+  }
+}

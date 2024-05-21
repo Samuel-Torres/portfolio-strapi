@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_text_media_aside_text_media_asides",
+  "info": {
+    "displayName": "textMediaAside",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "maxLength": 1000,
+      "required": true
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "flip": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
